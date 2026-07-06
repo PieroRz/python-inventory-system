@@ -68,65 +68,6 @@ def main():
 
         else:
             print("Invalid option.")
-    # print("Sistema de Inventario")
-
-    # data = {
-    #     "product_id": 99,
-    #     "name": "MacBook Air",
-    #     "product_type": "Laptop",
-    #     "brand": "Apple",
-    #     "quantity": 3
-    # }
-
-    # product = Product.from_dict(data)
-    # # product.display_info()
-
-    # inventory = Inventory()
-
-    # inventory.load_products()
-    # inventory.list_products()
-
-    # laptop = Product(
-    #     1,
-    #     "ThinkPad E14",
-    #     "Laptop",
-    #     "Lenovo",
-    #     10
-    # )
-
-    # printer = Product(
-    #     2,
-    #     "LaserJet Pro",
-    #     "Printer",
-    #     "HP",
-    #     5
-    # )
-
-    # inventory.add_product(laptop)
-    # inventory.add_product(printer)
-
-    # inventory.save_products()
-
-    # print("Products saved.")
-
-    # if inventory.remove_product(1):
-    #     print("Product removed.")
-    # else:
-    #     print("Product not found.")
-
-    # if inventory.update_product_quantity(2, 8):
-    #     print("Product quantity updated.")
-    # else:
-    #     print("Product not found.")
-
-    # inventory.list_products()
-
-    # product = inventory.find_product_by_id(1)
-
-    # if product:
-    #     product.display_info()
-    # else:
-    #     print("Product not found.")
 
 if __name__ == "__main__":
     main()
