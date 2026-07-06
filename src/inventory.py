@@ -1,3 +1,6 @@
+import json
+from product import Product
+
 class Inventory:
     def __init__(self):
         self.products = []
@@ -29,3 +32,16 @@ class Inventory:
             product.quantity = new_quantity
             return True
         return False
+    
+    def save_products(self):
+        products_data = [product.to_dict() for product in self.products]
+        with open("data/products.json", "w") as file:
+            json.dump(products_data, file, indent=4)
+
+    def load_products(self):
+        try:
+            with open("data/products.json", "r") as file:
+                products_data = json.load(file)
+                self.products = [Product.from_dict(data) for data in products_data]
+        except FileNotFoundError:
+            print("No products found. Starting with an empty inventory.")

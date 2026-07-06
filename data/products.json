@@ -1,0 +1,23 @@
+[
+    {
+        "product_id": 2,
+        "name": "LaserJet Pro",
+        "product_type": "Printer",
+        "brand": "HP",
+        "quantity": 5
+    },
+    {
+        "product_id": 3,
+        "name": "Monitor P2425H",
+        "product_type": "Monitor",
+        "brand": "Dell",
+        "quantity": 15
+    },
+    {
+        "product_id": 4,
+        "name": "Macbook air M5",
+        "product_type": "Laptop",
+        "brand": "Apple",
+        "quantity": 10
+    }
+]

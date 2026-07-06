@@ -12,3 +12,22 @@ class Product:
         print(f"Type: {self.product_type}")
         print(f"Brand: {self.brand}")
         print(f"Quantity: {self.quantity}")
+    
+    def to_dict(self):
+        return {
+            "product_id": self.product_id,
+            "name": self.name,
+            "product_type": self.product_type,
+            "brand": self.brand,
+            "quantity": self.quantity
+        }
+    
+    @classmethod
+    def from_dict(cls, data):
+        return cls(
+            data["product_id"],
+            data["name"],
+            data["product_type"],
+            data["brand"],
+            data["quantity"]
+        )
